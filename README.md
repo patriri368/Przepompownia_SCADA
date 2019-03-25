@@ -1,0 +1,16 @@
+# Projekt przepompowni - wizualizacja SCADA
+
+Tematem projektu jest sterowanie poziomem wody w zbiornikach. Obiektem jest zbiornik na ciecz, w którym znajdują się czujniki poziomu, określające następujące stany: przelew, poziom przeciwpożarowy, poziom zabezpieczenia pomp hydroforowych. Elementami wykonawczymi są dwie pompy z napędem elektrycznym. Ich działanie sterowane jest za pomocą czujników poziomu cieczy. Układ jest wyposażony w czujniki poziomów wykorzystywane do sygnalizacji pracy układu. Układ działa w dwóch trybach: automatycznym i ręcznym. Informacje o tym, kiedy załączyć i wyłączyć pompy sterownik otrzymuje z pływaków. W momencie osiągnięcia poziomu przelewu, przeciwpożarowego 
+lub suchobiegu zaświecane są odpowiednie diody.
+
+a) Tryb manual
+W trybie manual jest do dyspozycji pięć przełączników: zawór wlotowy górny, pompa górna, zawór wlotowy dolny, pompa dolna, zawór wylotowy. Za ich pomocą można sterować zaworami i pompami, a w konsekwencji przepływem cieczy. Ciecz jest pompowana przez rury górne i dolne do zbiornika głównego, a następnie wypompowywana z niego przez dolną rurę do zbiornika gotowego wyrobu. W każdym momencie możliwe jest przerwanie pompowania cieczy poprzez wyłączenie danej pompy lub zaworu. Po osiągnięciu poziomu maksymalnego równego 100 w zbiorniku głównym zawory oraz pompy są wyłączane i niemożliwe jest dalsze pompowanie cieczy.  Podczas pracy w trybie manual, aktualny poziom cieczy w zbiorniku sygnalizowany jest za pomocą diod.
+
+b) Tryb auto
+W trybie auto dostępne są dwa rodzaje symulacji – Symulacja AUTO oraz Symulacja Etykiety.
+Symulacja AUTO polega na tym, że zbiornik napełniany jest cieczą od poziomu zero do poziomu maksymalnego równego 100. W trakcie procesu napełniania zbiornika pracują obie pompy. Po osiągnięciu tego poziomu pompy zostają wyłączone, a zawory górne zamknięte. Zostaje otwarty natomiast zawór dolny, który upuszcza ciecz z głównego zbiornika (ZbiornikReaktor) do zbiornika, w którym znajduje się gotowy wyrób.
+ Po opróżnieniu zbiornika, następuje ponowne napełnienie zbiornika do poziomu maksymalnego. Podczas procesu napełniania oraz opróżniania procesu zaświecane 
+są diody informujące o aktualnym poziomie cieczy w zbiorniku, tj. przelew, poziom przeciwpożarowy, suchobieg.
+Drugim z dostępnych trybów jest Symulacja Etykiety. Po wyborze tego wariantu należy wpisać zadane wartości trzem parametrom – stężenie zadane, temperatura zadana oraz czas mieszania. Stężenie zadane jest osiągane poprzez odpowiednie sterowanie ilością cieczy wprowadzanej przez górny dopływ zbiornika. Jest to osiągane w trakcie napełniania zbiornika do wartości maksymalnej. Kolejnym z parametrów jest temperatura zadana, która osiągana jest również w trakcie napełniania zbiornika. Czas mieszania to czas, który odliczany jest od momentu osiągnięcia przez ciecz w zbiorniku poziomu maksymalnego. Czas ten wyrażony jest w sekundach. Po upływie zadanego czasu mieszania następuje opróżnienie zbiornika do poziomu zero. Podczas procesu symulacji etykiety również występuje sygnalizacja za pomocą diod.
+
+W aplikacji zostało zrealizowane logowanie użytkownika o różnych poziomach dostępu. Stworzone także okno z alarmami, trendami bieżącymi oraz edycją użytkowników. 
