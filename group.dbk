@@ -1,0 +1,29 @@
+Number of Levels:	3
+    Level:	  2	 1
+    Level:	  1	 2
+    Level:	  0	 3
+End of Level Information.
+Begin Group Definition.
+    Group Name:	$System;0001
+    Level:		1
+    Number Children:	2
+Children.
+Begin Group Definition.
+    Group Name:	ZbiornikGotowyWyrob;003E
+    Level:		2
+    Number Children:	0
+No children.
+More Siblings.
+Begin Group Definition.
+    Group Name:	ZbiornikReaktor;003C
+    Level:		2
+    Number Children:	1
+Children.
+Begin Group Definition.
+    Group Name:	Zawory;003D
+    Level:		3
+    Number Children:	0
+No children.
+No more siblings.
+No more siblings.
+No more siblings.
